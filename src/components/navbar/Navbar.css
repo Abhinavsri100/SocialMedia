@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.Navbar{
+  display: flex;
+  flex-direction: row;
+}
