@@ -10,9 +10,9 @@ import {
 import store from "../redux/store";
 import { showToast } from "../redux/slices/appConfigSlice";
 import { TOAST_FAILURE } from "../App";
-let baseURL = "http://localhost:4500";
+let baseURL = "https://social-media-servers-wu2m.onrender.com";
 export const axiosClient = axios.create({
-  baseURL: "http://localhost:4500",
+  baseURL: "https://social-media-servers-wu2m.onrender.com",
   withCredentials: true,
 });
 axiosClient.interceptors.request.use((request) => {
