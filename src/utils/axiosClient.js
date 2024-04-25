@@ -40,7 +40,8 @@ axiosClient.interceptors.response.use(async (response) => {
   );
   if (
     statusCode === 401 &&
-    originalRequest.url === "http://localhost:4500/auth/refresh"
+    originalRequest.url ===
+      "https://social-media-servers-wu2m.onrender.com/auth/refresh"
   ) {
     removeItem(KEY_ACCESS_TOKEN);
 
