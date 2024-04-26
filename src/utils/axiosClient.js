@@ -10,9 +10,9 @@ import {
 import store from "../redux/store";
 import { showToast } from "../redux/slices/appConfigSlice";
 import { TOAST_FAILURE } from "../App";
-let baseURL = "https://social-media-servers-wu2m.onrender.com";
+let baseURL = "https://socialmediaserver-kgur.onrender.com";
 export const axiosClient = axios.create({
-  baseURL: "https://social-media-servers-wu2m.onrender.com",
+  baseURL: "https://socialmediaserver-kgur.onrender.com",
   withCredentials: true,
 });
 axiosClient.interceptors.request.use((request) => {
@@ -41,7 +41,7 @@ axiosClient.interceptors.response.use(async (response) => {
   if (
     statusCode === 401 &&
     originalRequest.url ===
-      "https://social-media-servers-wu2m.onrender.com/auth/refresh"
+      "https://socialmediaserver-kgur.onrender.com/auth/refresh"
   ) {
     removeItem(KEY_ACCESS_TOKEN);
 
